@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 구조</title>
+    <style>
+        #warpping{
+            width: 1200px;
+            height: 1300px;
+            border: 1px solid red;
+            padding: 5px;
+        }
+
+        #mainBanner{
+            width: auto;
+            height: 20%;
+            border: 1px solid red;
+        }
+
+        #body{
+            width: auto;
+            height: 80%;
+            border: 1px solid red;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+
+        #left_side{
+            float: left;
+            width: 180px;
+            height: 100%;
+            border: 1px solid red;
+            box-sizing: border-box;
+            margin-right: 10px;          
+        }
+
+        #right_side{
+            float: left;
+            width: 900px;
+            height: 100%;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="warpping"> <!--골격-->
+        <div id="mainBanner"> <!-- 메인 베너-->
+        </div>   
+        <div id="body">
+            <div id="left_side">
+                <div id="login"><!--로그인-->
+                </div>
+            </div>
+            <div id="right_side">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
