@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 구조</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 1px;
+        }
+        html,body{
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #wrap{
+            width: 90%;
+            height: 100%;
+            margin: auto;
+        }
+
+        #mainWrap{
+            width: 1080px;
+            height: 100%;
+            margin: auto;
+            background-color: #fff9f2   
+        }
+        #banner{
+            width: 1080px;
+            height: 130px;
+        }
+        
+        #main{
+            width: 1080px;
+            height:calc(100% - 130px);
+        }
+
+        #left{
+            float: left;
+            width: 200px;
+            height: 100%;
+        }
+
+        #right{
+            float: right;
+            width:calc(1080px - 210px);
+            height: 100%;
+        }
+        
+        #member{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+            
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="mainWrap" >
+            <div id="banner">
+                <img src="./images/blog-title.png" alt="Bind_메인_banner" width="1080px" height="130px">
+            </div>
+            <div id="main">
+                <div id="left">
+                    <div id="member">
+                        <hr size="10px">
+                        <button id="login" class="btn btn-success">로그인</button>
+                        <br>
+                        <button id="singUp" class="btn btn-success">회원가입</button>
+                        <hr size="10px">
+                    </div>
+                    <div id="nav">
+                        <h3>OTT</h3>
+                        <ul id="ott">
+                            <li>NEXFLIX</li>
+                            <li>WAVE</li>
+                            <li>WATCHA</li>
+                        </ul>
+                        <h3>E-commerce</h3>
+                        <ul id="market">
+                            <li>Coupang</li>
+                            <li>위메프</li>
+                            <li>Kuly</li>
+                        </ul>
+                        <h3>EVENT</h3>
+                        <ul id="event">
+                            <li>SAMSUNG</li>
+                            <li>LG</li>
+                            <li>SK</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="right" class="border border-5">
+                    <table></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
