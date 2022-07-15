@@ -1,5 +1,15 @@
 #member{
+    display: grid;
+    grid-template-rows: 1fr 10fr;
     width: 250px;
     height: 350px;
     background-color: aquamarine;
+}
+#member>div{
+    text-align: center;
+}
+#member_login{
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
