@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: purple;
+}
+#rightad{
+    width: 150px;
+    height: 600px;
+    position: absolute;
+    top: 10%;
+    right: 13%;
+    background-color: black;
+}
+#leftad{
+    width: 150px;
+    height: 600px;
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    background-color: black;
+}
+#mainWrap{
+    width: 1080px;
+    background-color: black;
+    margin: 20px auto;
+}
+#banner{
+    height: 130px;
+    margin-bottom: 10px;
+    background-color: blue;
+}
+#nav{
+    height: 80px;
+    margin-bottom: 10px;
+    background-color: bisque;
+}
+#mainBody{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 10px;
+}
+#member{
+    width: 250px;
+    height: 400px;
+    background-color: red;  
+}
+#mainad{
+    height: 400px;
+    background-color: orange;
+}
+#nav1Body{
+    height: 400px;
+    background-color: yellow;
+    grid-column: 1/3;
+}
+#nav2Body{
+    height: 400px;
+    background-color: green;
+    grid-column: 1/3;
+}
+#nav3Body{
+    height: 400px;
+    background-color: blue;
+    grid-column: 1/3;
+}
+#profile_pic{
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-color: #cecece;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#profile_pic a{
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+    line-height: 0;
+    background-position: -172px -226px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+#netflex{
+    border: 1px solid red; 
+}
+#wave{
+    border: 1px solid red;
+}
+#whatcha{
+    border: 1px solid red;
+}
+
+
+@media screen and (max-width: 1850px) {
+    .ad {
+    display: none;
+    }
+    } 
